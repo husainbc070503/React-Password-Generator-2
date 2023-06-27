@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 30px auto;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #191919;
+  margin-bottom: 30px;
+}
+
+.generator__card {
+  width: 580px;
+  margin: auto;
+  max-width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+}
+
+.pass-field,
+.input-range>.show {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pass-field .copy__btn {
+  background: #12bccb;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.show {
+  font-size: 22px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 15px;
+  accent-color: #12bccb;
+}
+
+.input-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 17px 0;
+  padding: 0 18px;
+}
+
+.input-boxes label {
+  margin-left: 5px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.input-boxes input {
+  accent-color: #12bccb;
+  cursor: pointer;
+}
+
+.gen__btn {
+  width: 100%;
+  background: #12bccb;
+  color: #fff;
+  padding: 12px 0;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 22px;
+}
+
+.strength-container {
+  text-align: end;
+  margin-top: 30px;
+}
+
+.strength-container>p {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.strength-container>span {
+  padding: 4px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #191919;
+}
+
+.strength-container .badge_1 {
+  background-color: #B70404;
+  color: #fff;
+}
+
+.strength-container .badge_2 {
+  background-color: #E7B10A;
+}
+
+.strength-container .badge_3 {
+  background-color: #4FC0D0;
+}
+
+.strength-container .badge_4 {
+  background-color: #A2FF86;
+}
+
+.strength-container .badge_5 {
+  background-color: #00DFA2;
+}
+
+@media (max-width: 600px) {
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .input-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+  }
+
+  .show {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 900px) {
+  .generator__card {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
